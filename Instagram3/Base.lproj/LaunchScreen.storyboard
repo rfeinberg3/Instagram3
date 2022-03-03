@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ixk-Zx-eQF">
+                                <rect key="frame" x="122" y="365" width="170" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="Ntx-rY-ccE"/>
+                                    <constraint firstAttribute="height" constant="170" id="XXI-Er-xwA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="camera.shutter.button.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Fl0-Pa-gRX">
+                                <rect key="frame" x="224" y="600.5" width="170" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="Uxe-0R-lyu"/>
+                                    <constraint firstAttribute="height" constant="170" id="tBe-9h-ibY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="gear.badge.checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HyB-0A-lr5">
+                                <rect key="frame" x="20" y="123" width="171.5" height="170.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="IBL-ku-Apw"/>
+                                    <constraint firstAttribute="width" constant="170" id="gyp-ID-jnU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fl0-Pa-gRX" secondAttribute="trailing" constant="20" id="0kx-pV-LKl"/>
+                            <constraint firstItem="ixk-Zx-eQF" firstAttribute="top" secondItem="HyB-0A-lr5" secondAttribute="bottom" constant="70" id="3Np-bd-MIF"/>
+                            <constraint firstItem="Fl0-Pa-gRX" firstAttribute="top" secondItem="ixk-Zx-eQF" secondAttribute="bottom" constant="70" id="5df-gZ-h9n"/>
+                            <constraint firstItem="ixk-Zx-eQF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Erk-m9-hal"/>
+                            <constraint firstItem="HyB-0A-lr5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OSI-4X-9Jc"/>
+                            <constraint firstItem="ixk-Zx-eQF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UA4-Sw-wrO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fl0-Pa-gRX" secondAttribute="bottom" constant="20" id="zz0-Gs-ram"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zz0-Gs-ram"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.shutter.button.fill" catalog="system" width="128" height="109"/>
+        <image name="gear.badge.checkmark" catalog="system" width="128" height="111"/>
+        <image name="wifi" catalog="system" width="128" height="91"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
