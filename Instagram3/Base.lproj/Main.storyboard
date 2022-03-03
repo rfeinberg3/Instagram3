@@ -90,12 +90,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3153.6231884057975" y="61.607142857142854"/>
+            <point key="canvasLocation" x="2532" y="62"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="loginViewController" customModule="Instagram3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="loginViewController" customModule="Instagram3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,6 +292,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="vaj-fT-puX">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="cnZ-EK-SVH">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="8hS-3P-KST" id="Cfc-yd-z4j"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="Phl-c8-l5m">
                             <connections>
                                 <segue destination="E6m-Cn-xaA" kind="presentation" id="Dav-gu-VAf"/>
@@ -304,12 +309,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPn-XU-Zgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2066.666666666667" y="61.607142857142854"/>
+            <point key="canvasLocation" x="1707" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yyn-8h-U11">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7G5-2J-5u5" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="feedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7G5-2J-5u5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aja-Zt-gqI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
