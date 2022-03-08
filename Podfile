@@ -18,5 +18,6 @@ target 'Instagram3' do
 
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
 
 end
